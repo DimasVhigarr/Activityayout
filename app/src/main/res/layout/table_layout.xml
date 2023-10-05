@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+
+    <!-- Gambar di atas tengah -->
+    <TableRow>
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_logo"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:layout_marginTop="30dp"
+
+    <!-- Nama -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:paddingRight="10dp"
+            android:gravity="end"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/nameEditText1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:contentDescription="isi nama"/>
+    </TableRow>
+
+    <!-- Nomor Telepon -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/phoneEditText2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="isi no telp"/>
+    </TableRow>
+
+    <!-- Alamat -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:paddingRight="10dp"
+            android:gravity="end"/>
+
+        <EditText
+            android:id="@+id/addressEditText3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="isi alamat"/>
+    </TableRow>
+
+    <!-- Tombol Submit -->
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginLeft="150dp"
+            ></Button>
+</TableLayout>
